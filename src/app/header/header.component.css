@@ -1,0 +1,7 @@
+.btn {
+  cursor: pointer !important;
+}
+
+.setting-bar {
+  display: flex;
+}

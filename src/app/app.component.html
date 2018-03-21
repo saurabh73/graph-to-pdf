@@ -1,0 +1,11 @@
+<ng-sidebar-container [animate]="false" >
+  <!-- A sidebar -->
+  <ng-sidebar #sidebar [position]="'left'" [opened]="false" [showBackdrop]="true">
+    <app-sidebar-menu></app-sidebar-menu>
+  </ng-sidebar>
+
+  <div ng-sidebar-content>
+    <app-header></app-header>
+    <app-dashboard></app-dashboard>
+  </div>
+</ng-sidebar-container>

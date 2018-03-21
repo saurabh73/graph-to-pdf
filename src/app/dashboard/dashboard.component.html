@@ -1,0 +1,56 @@
+<div class="container">
+  <div id="graph-container">
+    <div class="row">
+      <div class="card-container col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Stock Price Compare</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Amazon <i class="fa fa-square clr-amaz"></i> Google <i
+              class="fa fa-square clr-goog"></i></h6>
+            <div class="row chart-container">
+              <app-area-chart></app-area-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Bitcoin Price History</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Since June 2017</h6>
+            <div class="row chart-container">
+              <app-line-chart></app-line-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-container col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Breakfast Cereal Comparison</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Protein vs Calorie</h6>
+            <div class="row chart-container">
+              <app-scatterplot-chart></app-scatterplot-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Letter Frequency in English</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Percentage distribution</h6>
+            <div class="row chart-container">
+              <app-bar-chart></app-bar-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loader" *ngIf="loading">
+    <img src="assets/images/Ripple.svg" alt="">
+  </div>
+</div>

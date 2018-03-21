@@ -1,0 +1,14 @@
+ng-sidebar-container {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+
+:host >>> .ng-sidebar  {
+  background-color: white !important;
+  width: 300px;
+  transition: transform 1s;
+}

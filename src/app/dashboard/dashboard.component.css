@@ -1,0 +1,29 @@
+#graph-container {
+    padding: 15px !important;
+}
+.card-container {
+    padding: 5px !important;
+}
+.chart-container {
+    height: 300px;
+}
+
+app-line-chart, app-area-chart, app-scatterplot-chart, app-bar-chart {
+    width: 100% !important;
+}
+
+.clr-amaz {
+    color: #FF9900 !important;
+}
+
+.clr-goog {
+    color: #3369E8 !important;
+}
+
+.loader{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

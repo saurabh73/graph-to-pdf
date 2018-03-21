@@ -1,0 +1,30 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand" href="#"><i class="fa fa-cog"></i> Settings</a>
+    <button class="btn btn-dark" (click)="toggleSidebar()" ><i class="fa fa-times" aria-hidden="true"></i></button>
+</nav>
+<div>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center dropdown">
+      <button class="btn btn-light dropdown-toggle menu-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Orientation: {{pageSetting.orientation}}
+      </button>
+      <div class="dropdown-menu p-0 m-0 row">
+        <a class="dropdown-item" *ngFor="let orientation of pageSettingOptions.orientationOptions" (click)="updatePageSetting(true, orientation)">
+          {{orientation}}
+        </a>
+      </div>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-center dropdown">
+      <button class="btn btn-light dropdown-toggle menu-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Page Size: {{pageSetting.pageSize}}
+      </button>
+      <div class="dropdown-menu p-0 m-0 row">
+        <a class="dropdown-item" *ngFor="let pageSize of pageSettingOptions.pageSizeOptions" (click)="updatePageSetting(false, pageSize)">
+          {{pageSize}}  <span class="page-dimension">{{utilService.getPageDimension(pageSize)}}</span>
+        </a>
+      </div>
+    </li>
+
+  </ul>
+</div>
