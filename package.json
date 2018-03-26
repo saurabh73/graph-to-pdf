@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start": "node www/server.js",
-	"start-web": "node simple-web-version/server.js"
+    "start-web": "node simple-web-version/server.js"
   },
   "private": true,
   "dependencies": {

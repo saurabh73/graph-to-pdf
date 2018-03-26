@@ -24,8 +24,3 @@ Run `npm start` to start the web server. Navigate to `http://localhost:4200/`
 You can configure page setting and orientation using menu option. Default behaviour creates pdf images as per screenshot size.
 Use snapshot button to generate pdf.
 
-# Simple Web Version (Without Angular Framework)
-Simple web version of this app using only Jquery/Bootstrap can be found in *simple-web-version/www* folder.
-This version is without configuration setting for simplicity reasons thus creates pdf as per image size.
-
-To run this web version on node-server, Run `npm run start-web` command.  Navigate to `http://localhost:4200/`
